@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teacher's Day 2026 | Neuronauts Forum Invitation</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Cinzel (Luxury Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Confetti.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+            display: ['"Cinzel"', 'serif'],
+          },
+          colors: {
+            neural: {
+              950: '#060814',
+              900: '#0B0F29',
+              800: '#141B4D',
+              700: '#1F2975',
+              accent: '#6366F1',
+              cyan: '#06B6D4'
+            },
+            gold: {
+              300: '#FDE68A',
+              400: '#FCD34D',
+              500: '#F59E0B',
+              600: '#D97706',
+              glow: '#FFD700'
+            }
+          },
+          animation: {
+            'float': 'float 6s ease-in-out infinite',
+            'pulse-glow': 'pulseGlow 3s infinite',
+            'spin-slow': 'spin 20s linear infinite',
+            'shimmer': 'shimmer 2.5s infinite linear',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' },
+            },
+            pulseGlow: {
+              '0%, 100%': { opacity: '0.6', filter: 'drop-shadow(0 0 15px rgba(245, 158, 11, 0.4))' },
+              '50%': { opacity: '1', filter: 'drop-shadow(0 0 30px rgba(245, 158, 11, 0.8))' },
+            },
+            shimmer: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #060814;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1F2975;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D97706;
+    }
+
+    .glass-card {
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF6D1 0%, #F59E0B 50%, #D97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .neural-gradient-text {
+      background: linear-gradient(135deg, #A5B4FC 0%, #6366F1 50%, #06B6D4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gold-border-glow {
+      box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.25), inset 0 0 15px -5px rgba(245, 158, 11, 0.15);
+    }
+
+    .wax-seal {
+      background: radial-gradient(circle at 30% 30%, #EF4444, #991B1B, #450A0A);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6), inset 0 2px 4px rgba(255,255,255,0.3);
+    }
+  </style>
+</head>
+<body class="bg-neural-950 text-slate-100 font-sans antialiased overflow-x-hidden relative selection:bg-gold-500 selection:text-neural-950">
+
+  <!-- Interactive Neural Particle Background -->
+  <canvas id="neural-canvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+
+  <!-- Ambient Glow Blobs -->
+  <div class="fixed top-1/4 left-1/4 w-96 h-96 bg-indigo-600/15 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse-glow"></div>
+  <div class="fixed bottom-1/3 right-1/4 w-[28rem] h-[28rem] bg-gold-500/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+  <div class="fixed top-3/4 left-1/2 w-80 h-80 bg-cyan-500/10 rounded-full blur-[130px] pointer-events-none -z-10"></div>
+
+  <!-- Audio Chime Button & Quick RSVP floating button -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    <button id="chime-btn" onclick="playGentleChime()" class="glass-card hover:border-gold-400/50 p-3 rounded-full text-gold-400 transition-all duration-300 hover:scale-110 shadow-lg shadow-black/50 group" title="Play Celebration Chime">
+      <i class="fa-solid fa-bell text-lg group-hover:animate-bounce"></i>
+    </button>
+    <a href="#rsvp" class="flex items-center gap-2 bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-neural-950 font-bold px-5 py-3 rounded-full shadow-lg shadow-gold-500/30 transition-all duration-300 hover:scale-105 active:scale-95 text-sm tracking-wide">
+      <i class="fa-solid fa-envelope-open-text text-base"></i>
+      <span>RSVP Now</span>
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 glass-card border-b border-white/10 bg-neural-950/70 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo / Forum Identity -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-indigo-500 via-purple-600 to-gold-500 p-0.5 shadow-md shadow-indigo-500/30 group-hover:scale-105 transition-transform">
+          <div class="w-full h-full bg-neural-950 rounded-[10px] flex items-center justify-center">
+            <i class="fa-solid fa-brain text-gold-400 text-lg group-hover:rotate-12 transition-transform"></i>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-display font-bold tracking-wider text-base text-white">NEURONAUTS</span>
+            <span class="px-2 py-0.5 text-[10px] font-extrabold uppercase bg-gold-500/20 text-gold-400 border border-gold-500/30 rounded-full tracking-widest">FORUM</span>
+          </div>
+          <p class="text-[11px] text-slate-400 tracking-tight">Dept. of Emerging Tech & Sciences</p>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#invitation" class="hover:text-gold-400 transition-colors">The Letter</a>
+        <a href="#highlights" class="hover:text-gold-400 transition-colors">Highlights</a>
+        <a href="#itinerary" class="hover:text-gold-400 transition-colors">Schedule</a>
+        <a href="#tributes" class="hover:text-gold-400 transition-colors">Tributes</a>
+        <a href="#venue" class="hover:text-gold-400 transition-colors">Venue</a>
+      </nav>
+
+      <!-- Action Button -->
+      <button onclick="triggerConfettiRain()" class="hidden sm:inline-flex items-center gap-2 border border-gold-400/40 hover:border-gold-400 text-gold-400 hover:bg-gold-500/10 px-4 py-2 rounded-lg text-xs font-semibold tracking-wider uppercase transition-all duration-200">
+        <i class="fa-solid fa-sparkles text-gold-400"></i>
+        <span>Celebrate</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH LUXURY INVITATION ENVELOPE -->
+  <main>
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden z-10">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+        
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border border-gold-500/30 text-gold-400 text-xs sm:text-sm font-medium mb-6 shadow-inner animate-float">
+          <i class="fa-solid fa-graduation-cap text-gold-400"></i>
+          <span>Honoring Our Guiding Lights & Intellectual Architects</span>
+          <i class="fa-solid fa-sparkles text-gold-400"></i>
+        </div>
+
+        <!-- Grand Title -->
+        <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-4">
+          <span class="gold-gradient-text block">TEACHER'S DAY 2026</span>
+          <span class="text-2xl sm:text-3xl lg:text-4xl text-slate-200 font-serif italic font-normal tracking-normal block mt-2">
+            “Illuminating Minds, Inspiring Futures”
+          </span>
+        </h1>
+
+        <p class="max-w-2xl mx-auto text-slate-300 text-base sm:text-lg mb-10 leading-relaxed font-light">
+          The <span class="text-white font-semibold">Neuronauts Student Forum</span> reverently invites all our esteemed faculty members and mentors to a grand gala of gratitude, joy, and celebration.
+        </p>
+
+        <!-- Quick Event Quick Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto mb-12 text-left">
+          <div class="glass-card p-4 rounded-2xl border border-white/10 flex items-center gap-4 hover:border-gold-500/40 transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 text-xl">
+              <i class="fa-regular fa-calendar-star"></i>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-slate-400 font-medium">Date</p>
+              <p class="text-base font-bold text-white">September 5, 2026</p>
+              <p class="text-[11px] text-gold-400/90 font-medium">Saturday Morning</p>
+            </div>
+          </div>
+
+          <div class="glass-card p-4 rounded-2xl border border-white/10 flex items-center gap-4 hover:border-gold-500/40 transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-slate-400 font-medium">Time</p>
+              <p class="text-base font-bold text-white">10:00 AM – 01:30 PM</p>
+              <p class="text-[11px] text-indigo-400/90 font-medium">Followed by Grand Feast</p>
+            </div>
+          </div>
+
+          <div class="glass-card p-4 rounded-2xl border border-white/10 flex items-center gap-4 hover:border-gold-500/40 transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-slate-400 font-medium">Venue</p>
+              <p class="text-base font-bold text-white">Main Auditorium</p>
+              <p class="text-[11px] text-cyan-400/90 font-medium">Aryabhata Block, Campus</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Countdown Timer -->
+        <div class="glass-card max-w-xl mx-auto p-6 rounded-3xl border border-gold-500/30 gold-border-glow mb-14">
+          <p class="text-xs uppercase tracking-widest text-gold-400 font-bold mb-4 flex items-center justify-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-gold-400 animate-ping"></span>
+            COUNTDOWN TO CELEBRATION
+          </p>
+          <div class="grid grid-cols-4 gap-3 text-center">
+            <div class="bg-neural-900/80 rounded-xl p-3 border border-white/5">
+              <span id="cd-days" class="text-2xl sm:text-4xl font-extrabold text-white block">00</span>
+              <span class="text-[10px] sm:text-xs text-slate-400 uppercase font-medium">Days</span>
+            </div>
+            <div class="bg-neural-900/80 rounded-xl p-3 border border-white/5">
+              <span id="cd-hours" class="text-2xl sm:text-4xl font-extrabold text-gold-400 block">00</span>
+              <span class="text-[10px] sm:text-xs text-slate-400 uppercase font-medium">Hours</span>
+            </div>
+            <div class="bg-neural-900/80 rounded-xl p-3 border border-white/5">
+              <span id="cd-minutes" class="text-2xl sm:text-4xl font-extrabold text-white block">00</span>
+              <span class="text-[10px] sm:text-xs text-slate-400 uppercase font-medium">Minutes</span>
+            </div>
+            <div class="bg-neural-900/80 rounded-xl p-3 border border-white/5">
+              <span id="cd-seconds" class="text-2xl sm:text-4xl font-extrabold text-gold-400 block">00</span>
+              <span class="text-[10px] sm:text-xs text-slate-400 uppercase font-medium">Seconds</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unfold / Scroll Prompt -->
+        <div class="flex justify-center">
+          <a href="#invitation" class="inline-flex flex-col items-center text-slate-400 hover:text-gold-400 transition-colors group">
+            <span class="text-xs uppercase tracking-widest font-semibold mb-2">Read The Official Invitation</span>
+            <div class="w-8 h-12 rounded-full border-2 border-slate-600 group-hover:border-gold-400 flex items-start justify-center p-1.5 transition-colors">
+              <div class="w-1.5 h-3 bg-gold-400 rounded-full animate-bounce"></div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FORMAL INVITATION LETTER SECTION -->
+    <section id="invitation" class="py-16 md:py-24 relative z-10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <!-- Royal Letter Envelope Style Container -->
+        <div class="relative bg-gradient-to-b from-[#111633] to-[#0A0D21] rounded-3xl p-6 sm:p-12 border-2 border-gold-500/40 shadow-2xl shadow-indigo-950/80">
+          
+          <!-- Decorative Corners -->
+          <div class="absolute top-3 left-3 w-8 h-8 border-t-2 border-l-2 border-gold-400/80 rounded-tl-lg pointer-events-none"></div>
+          <div class="absolute top-3 right-3 w-8 h-8 border-t-2 border-r-2 border-gold-400/80 rounded-tr-lg pointer-events-none"></div>
+          <div class="absolute bottom-3 left-3 w-8 h-8 border-b-2 border-l-2 border-gold-400/80 rounded-bl-lg pointer-events-none"></div>
+          <div class="absolute bottom-3 right-3 w-8 h-8 border-b-2 border-r-2 border-gold-400/80 rounded-br-lg pointer-events-none"></div>
+
+          <!-- Top Wax Seal Motif -->
+          <div class="flex justify-center -mt-12 sm:-mt-16 mb-6">
+            <div class="wax-seal w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center border-2 border-gold-300/40 shadow-xl cursor-pointer hover:scale-105 transition-transform" onclick="triggerConfettiRain()" title="Neuronauts Crest">
+              <i class="fa-solid fa-feather-pointed text-gold-300 text-xl sm:text-2xl"></i>
+            </div>
+          </div>
+
+          <!-- Letter Header -->
+          <div class="text-center mb-8 border-b border-white/10 pb-6">
+            <span class="text-xs uppercase tracking-[0.3em] text-gold-400 font-semibold block mb-1">Official Invitation Card</span>
+            <h2 class="font-serif text-2xl sm:text-4xl text-white font-bold italic">To Our Respected Professors & Mentors</h2>
+            <p class="text-xs text-slate-400 mt-1">Presented with reverence by The Neuronauts Student Body</p>
+          </div>
+
+          <!-- Letter Body -->
+          <div class="space-y-5 text-slate-200 text-base sm:text-lg leading-relaxed font-light font-serif">
+            <p>
+              <span class="text-3xl font-display font-bold text-gold-400 float-left mr-2 leading-none">D</span>ear Esteemed Professors,
+            </p>
+            <p class="indent-4 sm:indent-8">
+              Behind every scientific breakthrough, every line of innovative code, and every soaring ambition lies the patient guidance of a teacher. You have not merely taught us the principles of technology, neuroscience, and logic; you have sculpted our character, nurtured our curiosity, and ignited within us the courage to question and create.
+            </p>
+            <p class="indent-4 sm:indent-8">
+              On this auspicious occasion of <strong class="text-gold-300 font-semibold">Teacher's Day 2026</strong>, the students of the <strong class="text-indigo-300 font-semibold">Neuronauts Forum</strong> humbly request the honor of your gracious presence at our special tribute celebration.
+            </p>
+            <p class="indent-4 sm:indent-8">
+              We have curated a memorable day of heartfelt felicitations, lighthearted camaraderie, cultural performances, interactive laughter, and tokens of our unending gratitude. Please join us as we turn the spotlight onto those who illuminate our world every single day.
+            </p>
+          </div>
+
+          <!-- Sign-off Block -->
+          <div class="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="text-center sm:text-left">
+              <p class="text-xs uppercase tracking-widest text-slate-400 font-sans">With Profound Respect & Admiration,</p>
+              <p class="font-display font-bold text-gold-400 text-lg sm:text-xl mt-1">The Neuronauts Forum</p>
+              <p class="text-xs text-slate-400 font-sans">Student Organizing Committee, Batch 2026</p>
+            </div>
+            
+            <div class="flex items-center gap-3">
+              <button onclick="downloadCalendarEvent()" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-4 py-2.5 rounded-xl text-xs font-semibold tracking-wide border border-white/20 transition-all">
+                <i class="fa-regular fa-calendar-plus text-gold-400 text-sm"></i>
+                <span>Add to Calendar</span>
+              </button>
+              <button onclick="window.print()" class="inline-flex items-center gap-2 bg-gold-500/20 hover:bg-gold-500/30 text-gold-300 px-4 py-2.5 rounded-xl text-xs font-semibold tracking-wide border border-gold-500/30 transition-all">
+                <i class="fa-solid fa-print text-sm"></i>
+                <span>Print Invitation</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EVENT HIGHLIGHTS / SPECIAL EXPERIENCES -->
+    <section id="highlights" class="py-16 bg-neural-900/60 relative z-10 border-y border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs uppercase tracking-widest text-gold-400 font-bold block mb-2">Curated With Love</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold text-white">Celebration Highlights</h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-3">A dedicated series of events crafted exclusively to honor, pamper, and celebrate our teachers.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Card 1 -->
+          <div class="glass-card p-6 rounded-2xl border border-white/10 hover:border-gold-400/50 hover:translate-y-[-6px] transition-all duration-300 group">
+            <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-5 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-award text-gold-400"></i>
+            </div>
+            <h3 class="font-bold text-lg text-white mb-2 group-hover:text-gold-300 transition-colors">Guru-Samman Felicitation</h3>
+            <p class="text-slate-300 text-sm leading-relaxed font-light">
+              Formal felicitation ceremony honoring the distinguished service and milestones of our venerable faculty members.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="glass-card p-6 rounded-2xl border border-white/10 hover:border-gold-400/50 hover:translate-y-[-6px] transition-all duration-300 group">
+            <div class="w-14 h-14 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-2xl mb-5 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-film text-gold-400"></i>
+            </div>
+            <h3 class="font-bold text-lg text-white mb-2 group-hover:text-gold-300 transition-colors">"Neural Chronicle" Tribute</h3>
+            <p class="text-slate-300 text-sm leading-relaxed font-light">
+              An exclusive video documentary montage capturing candid moments, memories, and heartfelt student gratitude across batches.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="glass-card p-6 rounded-2xl border border-white/10 hover:border-gold-400/50 hover:translate-y-[-6px] transition-all duration-300 group">
+            <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-5 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-masks-theater text-cyan-400"></i>
+            </div>
+            <h3 class="font-bold text-lg text-white mb-2 group-hover:text-gold-300 transition-colors">Fun Games & Trivia</h3>
+            <p class="text-slate-300 text-sm leading-relaxed font-light">
+              Relaxing, joyful games designed especially for teachers—including "Identify the Student Bug" and the "Whimsical Faculty Quiz".
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="glass-card p-6 rounded-2xl border border-white/10 hover:border-gold-400/50 hover:translate-y-[-6px] transition-all duration-300 group">
+            <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-5 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-mug-hot text-amber-400"></i>
+            </div>
+            <h3 class="font-bold text-lg text-white mb-2 group-hover:text-gold-300 transition-colors">Gala Luncheon & High Tea</h3>
+            <p class="text-slate-300 text-sm leading-relaxed font-light">
+              A culinary banquet with live artisan mocktails, bespoke gourmet treats, and relaxed informal networking.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DETAILED ITINERARY / TIMELINE -->
+    <section id="itinerary" class="py-20 relative z-10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center mb-16">
+          <span class="text-xs uppercase tracking-widest text-gold-400 font-bold block mb-2">Order of Events</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold text-white">Event Itinerary</h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-2">Saturday, September 5th, 2026</p>
+        </div>
+
+        <!-- Vertical Timeline -->
+        <div class="relative pl-6 sm:pl-10 border-l-2 border-indigo-500/30 space-y-10">
+          
+          <!-- Item 1 -->
+          <div class="relative group">
+            <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-neural-950 border-4 border-gold-400 group-hover:scale-125 transition-transform"></div>
+            <div class="glass-card p-5 sm:p-6 rounded-2xl border border-white/10 hover:border-gold-500/40 transition-all">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="px-3 py-1 bg-gold-500/20 text-gold-300 border border-gold-500/30 rounded-full text-xs font-bold tracking-wider">10:00 AM – 10:20 AM</span>
+                <span class="text-xs text-slate-400 font-medium"><i class="fa-regular fa-bell mr-1"></i> Grand Foyer</span>
+              </div>
+              <h4 class="text-lg font-bold text-white">Traditional Lamp Lighting & Invocation</h4>
+              <p class="text-slate-300 text-sm mt-1 font-light">Welcome address by the Student President and lighting of the sacred ceremonial lamp alongside Department Heads.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="relative group">
+            <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-neural-950 border-4 border-indigo-400 group-hover:scale-125 transition-transform"></div>
+            <div class="glass-card p-5 sm:p-6 rounded-2xl border border-white/10 hover:border-indigo-500/40 transition-all">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-full text-xs font-bold tracking-wider">10:20 AM – 11:00 AM</span>
+                <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-microphone-lines mr-1"></i> Main Stage</span>
+              </div>
+              <h4 class="text-lg font-bold text-white">Musical Tribute & Faculty Speeches</h4>
+              <p class="text-slate-300 text-sm mt-1 font-light">Acoustic medley of classical melodies dedicated to teachers, followed by inspiring words of wisdom from our mentors.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="relative group">
+            <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-neural-950 border-4 border-cyan-400 group-hover:scale-125 transition-transform"></div>
+            <div class="glass-card p-5 sm:p-6 rounded-2xl border border-white/10 hover:border-cyan-500/40 transition-all">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="px-3 py-1 bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 rounded-full text-xs font-bold tracking-wider">11:00 AM – 11:45 AM</span>
+                <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-video mr-1"></i> Big Screen Presentation</span>
+              </div>
+              <h4 class="text-lg font-bold text-white">Premiere: “The Synaptic Legacy”</h4>
+              <p class="text-slate-300 text-sm mt-1 font-light">Documentary film spotlighting our teachers' classroom memories, research guidance, and alumni video wishes from across the globe.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="relative group">
+            <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-neural-950 border-4 border-gold-400 group-hover:scale-125 transition-transform"></div>
+            <div class="glass-card p-5 sm:p-6 rounded-2xl border border-white/10 hover:border-gold-500/40 transition-all">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="px-3 py-1 bg-gold-500/20 text-gold-300 border border-gold-500/30 rounded-full text-xs font-bold tracking-wider">11:45 AM – 12:45 PM</span>
+                <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-gamepad mr-1"></i> Interactive Stage</span>
+              </div>
+              <h4 class="text-lg font-bold text-white">Whimsical Games & Token of Honor Presentation</h4>
+              <p class="text-slate-300 text-sm mt-1 font-light">Hilarious team challenges for teachers followed by the presentation of customized Neuronauts Mementos and Appreciation Awards.</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="relative group">
+            <div class="absolute -left-[31px] sm:-left-[47px] top-1.5 w-6 h-6 rounded-full bg-neural-950 border-4 border-emerald-400 group-hover:scale-125 transition-transform"></div>
+            <div class="glass-card p-5 sm:p-6 rounded-2xl border border-white/10 hover:border-emerald-500/40 transition-all">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <span class="px-3 py-1 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-full text-xs font-bold tracking-wider">12:45 PM Onwards</span>
+                <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-utensils mr-1"></i> Banquet Hall</span>
+              </div>
+              <h4 class="text-lg font-bold text-white">Grand Celebration Banquet & High Tea</h4>
+              <p class="text-slate-300 text-sm mt-1 font-light">Lavish culinary spread, live mocktails, group photo sessions, and joyful interactions.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LIVE GRATITUDE & TRIBUTES BOARD -->
+    <section id="tributes" class="py-16 bg-neural-900/60 relative z-10 border-y border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs uppercase tracking-widest text-gold-400 font-bold block mb-2">Student Expressions</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold text-white">The Gratitude Wall</h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-2">Notes of appreciation pinned by students of the Neuronauts Forum.</p>
+        </div>
+
+        <!-- Dynamic Notes Grid -->
+        <div id="tribute-wall" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+          
+          <div class="glass-card p-6 rounded-2xl border border-white/10 relative">
+            <div class="text-gold-400 text-xl mb-3"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="text-slate-200 text-sm font-light italic mb-4 leading-relaxed">
+              "Thank you for teaching us that a bug is not a dead end, but a clue to understanding the system better. Your patience during lab sessions inspires us every day!"
+            </p>
+            <div class="flex items-center gap-3 pt-3 border-t border-white/10">
+              <div class="w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center font-bold text-xs text-white">AI</div>
+              <div>
+                <p class="text-xs font-bold text-white">AI & ML Batch '26</p>
+                <p class="text-[10px] text-slate-400">Neuronauts Core Team</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl border border-white/10 relative">
+            <div class="text-gold-400 text-xl mb-3"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="text-slate-200 text-sm font-light italic mb-4 leading-relaxed">
+              "The warmth with which our professors answer even the simplest doubts made us fall in love with research. Happy Teacher's Day to the coolest mentors ever!"
+            </p>
+            <div class="flex items-center gap-3 pt-3 border-t border-white/10">
+              <div class="w-8 h-8 rounded-full bg-gold-600 flex items-center justify-center font-bold text-xs text-neural-950">DS</div>
+              <div>
+                <p class="text-xs font-bold text-white">Data Science Dept.</p>
+                <p class="text-[10px] text-slate-400">Junior Researchers</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl border border-white/10 relative">
+            <div class="text-gold-400 text-xl mb-3"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="text-slate-200 text-sm font-light italic mb-4 leading-relaxed">
+              "Beyond algorithms and circuits, you taught us ethics, grit, and empathy. Thank you for being our moral compass on campus!"
+            </p>
+            <div class="flex items-center gap-3 pt-3 border-t border-white/10">
+              <div class="w-8 h-8 rounded-full bg-cyan-600 flex items-center justify-center font-bold text-xs text-white">CS</div>
+              <div>
+                <p class="text-xs font-bold text-white">Final Year Students</p>
+                <p class="text-[10px] text-slate-400">Neuronauts Forum</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Add a Note Form -->
+        <div class="max-w-xl mx-auto glass-card p-6 rounded-2xl border border-indigo-500/30 text-center">
+          <h4 class="text-base font-bold text-white mb-2">Leave a Wish for Your Teachers</h4>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input id="note-input" type="text" placeholder="Write a short message of gratitude..." class="flex-1 bg-neural-950/80 border border-white/20 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-gold-400" />
+            <button onclick="addGratitudeNote()" class="bg-gold-500 hover:bg-gold-400 text-neural-950 font-bold px-5 py-2.5 rounded-xl text-sm transition-all whitespace-nowrap">
+              Post Note <i class="fa-solid fa-paper-plane ml-1"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RSVP & PASS GENERATION SECTION -->
+    <section id="rsvp" class="py-20 relative z-10">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs uppercase tracking-widest text-gold-400 font-bold block mb-2">Honored Attendance</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold text-white">Faculty RSVP & Pass</h2>
+          <p class="text-slate-300 text-sm sm:text-base mt-2">Kindly confirm your presence so our student team can prepare your personalized VIP token and dining arrangements.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- RSVP Form -->
+          <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-3xl border border-white/15 shadow-xl">
+            <form id="rsvp-form" onsubmit="handleRsvpSubmit(event)" class="space-y-4">
+              
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">Full Name & Title *</label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400"><i class="fa-solid fa-user-tie"></i></span>
+                  <input type="text" id="faculty-name" required placeholder="e.g. Dr. Ramesh Sharma / Prof. Sunita Rao" class="w-full bg-neural-900/90 border border-white/15 rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400 transition-colors" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">Department *</label>
+                  <select id="faculty-dept" required class="w-full bg-neural-900/90 border border-white/15 rounded-xl px-3.5 py-3 text-sm text-white focus:outline-none focus:border-gold-400 transition-colors">
+                    <option value="Computer Science & Engg">Computer Science & Engg</option>
+                    <option value="AI & Data Science">AI & Data Science</option>
+                    <option value="Information Science">Information Science</option>
+                    <option value="Electronics & Comm.">Electronics & Comm.</option>
+                    <option value="Basic Sciences & Maths">Basic Sciences & Humanities</option>
+                    <option value="Other Respected Dept">Other Department</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">Dietary Preference</label>
+                  <select id="faculty-diet" class="w-full bg-neural-900/90 border border-white/15 rounded-xl px-3.5 py-3 text-sm text-white focus:outline-none focus:border-gold-400 transition-colors">
+                    <option value="Vegetarian Gourmet">Vegetarian Gourmet</option>
+                    <option value="Jain Meal">Jain Meal</option>
+                    <option value="Special High-Tea & Snacks">High-Tea & Snacks Only</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">A Song Request or Favorite Quote (Optional)</label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400"><i class="fa-solid fa-music"></i></span>
+                  <input type="text" id="faculty-song" placeholder="Favorite retro melody or life motto..." class="w-full bg-neural-900/90 border border-white/15 rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-gold-400 transition-colors" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">Will you be joining us? *</label>
+                <div class="grid grid-cols-2 gap-3">
+                  <label class="flex items-center gap-2 p-3 bg-neural-900/60 border border-white/10 rounded-xl cursor-pointer hover:border-gold-400/50">
+                    <input type="radio" name="attendance" value="Yes" checked class="text-gold-500 focus:ring-gold-500" />
+                    <span class="text-sm font-medium text-white">Delighted to Attend</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-3 bg-neural-900/60 border border-white/10 rounded-xl cursor-pointer hover:border-gold-400/50">
+                    <input type="radio" name="attendance" value="Tentative" class="text-gold-500 focus:ring-gold-500" />
+                    <span class="text-sm font-medium text-slate-300">Will Try My Best</span>
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="w-full mt-4 bg-gradient-to-r from-gold-500 via-gold-400 to-amber-500 hover:from-gold-400 hover:to-gold-300 text-neural-950 font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-gold-500/25 transition-all duration-300 text-sm tracking-wider uppercase flex items-center justify-center gap-2">
+                <i class="fa-solid fa-id-badge text-base"></i>
+                <span>Confirm RSVP & Generate VIP Pass</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- VIP PASS PREVIEW CARD -->
+          <div class="lg:col-span-5">
+            <div id="vip-pass" class="relative bg-gradient-to-br from-[#1c1836] via-[#10132b] to-[#0b0e24] p-6 sm:p-7 rounded-3xl border-2 border-gold-400/50 shadow-2xl gold-border-glow overflow-hidden">
+              
+              <!-- Shimmer line background -->
+              <div class="absolute -top-20 -right-20 w-40 h-40 bg-gold-400/10 rounded-full blur-2xl pointer-events-none"></div>
+
+              <!-- Pass Header -->
+              <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-4">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-brain text-gold-400 text-xl"></i>
+                  <div>
+                    <h5 class="text-xs font-extrabold uppercase tracking-widest text-white">NEURONAUTS FORUM</h5>
+                    <p class="text-[9px] text-slate-400">Annual Teacher's Day Gala</p>
+                  </div>
+                </div>
+                <span class="px-2.5 py-1 bg-gold-500/20 text-gold-400 border border-gold-500/40 text-[10px] font-black rounded-lg uppercase tracking-wider">VIP GUEST</span>
+              </div>
+
+              <!-- Pass Body -->
+              <div class="space-y-3">
+                <div>
+                  <span class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">Honored Faculty</span>
+                  <h3 id="pass-name" class="text-xl font-bold text-white">Dr. Respected Professor</h3>
+                  <p id="pass-dept" class="text-xs text-gold-300 font-medium">Department of Emerging Technologies</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 pt-2 border-t border-white/10 text-xs">
+                  <div>
+                    <span class="text-[10px] text-slate-400 block uppercase">Date</span>
+                    <span class="text-white font-bold">05 Sept 2026</span>
+                  </div>
+                  <div>
+                    <span class="text-[10px] text-slate-400 block uppercase">Entry Time</span>
+                    <span class="text-white font-bold">10:00 AM IST</span>
+                  </div>
+                  <div>
+                    <span class="text-[10px] text-slate-400 block uppercase">Reserved Hall</span>
+                    <span class="text-white font-bold">Aryabhata Aud.</span>
+                  </div>
+                  <div>
+                    <span class="text-[10px] text-slate-400 block uppercase">Pass Code</span>
+                    <span id="pass-code" class="text-gold-400 font-mono font-bold">#GURU-2026</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- QR / Barcode aesthetic footer -->
+              <div class="mt-5 pt-4 border-t border-dashed border-white/20 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <!-- Generated QR placeholder SVG -->
+                  <div class="w-12 h-12 bg-white p-1 rounded-lg flex items-center justify-center">
+                    <svg viewBox="0 0 24 24" class="w-full h-full fill-neural-950">
+                      <path d="M2 2h8v8H2V2zm2 2v4h4V4H4zm10-2h8v8h-8V2zm2 2v4h4V4h-4zM2 14h8v8H2v-8zm2 2v4h4v-4H4zm14 0h2v2h-2v-2zm-4 0h2v4h-2v-4zm2 4h4v2h-4v-2zm2-2h2v2h-2v-2zm-4-4h2v2h-2v-2zm4 0h2v2h-2v-2z"/>
+                    </svg>
+                  </div>
+                  <div class="text-[10px] text-slate-400">
+                    <p class="text-white font-semibold">Priority Seat Reserved</p>
+                    <p>Neuronauts Organizing Host</p>
+                  </div>
+                </div>
+                <i class="fa-solid fa-award text-3xl text-gold-400/80"></i>
+              </div>
+
+            </div>
+
+            <!-- Confirmation notice -->
+            <div id="rsvp-status" class="hidden mt-4 p-4 rounded-2xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-xs text-center flex items-center justify-center gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+              <span>Thank you! Your presence has been honored and recorded.</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VENUE, CONTACT & LOCATION -->
+    <section id="venue" class="py-16 bg-neural-900/60 relative z-10 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          <!-- Venue Card -->
+          <div class="glass-card p-6 rounded-2xl border border-white/10">
+            <div class="w-10 h-10 rounded-xl bg-gold-500/10 text-gold-400 flex items-center justify-center text-lg mb-4">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Venue Location</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-3">
+              <strong>Main Auditorium (Auditorium 1)</strong><br />
+              Aryabhata Academic Complex, 2nd Floor<br />
+              Campus Central, University Campus
+            </p>
+            <p class="text-xs text-gold-400 flex items-center gap-1.5 font-medium">
+              <i class="fa-solid fa-circle-info"></i> Reserved VIP parking available at Gate 2.
+            </p>
+          </div>
+
+          <!-- Student Coordinators -->
+          <div class="glass-card p-6 rounded-2xl border border-white/10">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg mb-4">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Student Coordinators</h3>
+            <div class="space-y-3 text-sm text-slate-300">
+              <div class="flex justify-between items-center pb-2 border-b border-white/5">
+                <div>
+                  <p class="font-semibold text-white">President, Neuronauts</p>
+                  <p class="text-xs text-slate-400">Aarav Sharma (Final Year)</p>
+                </div>
+                <span class="text-xs text-gold-400 font-mono">+91 98765 43210</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <p class="font-semibold text-white">Secretary, Neuronauts</p>
+                  <p class="text-xs text-slate-400">Ananya Verma (Pre-Final)</p>
+                </div>
+                <span class="text-xs text-gold-400 font-mono">+91 91234 56789</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dress Code & Note -->
+          <div class="glass-card p-6 rounded-2xl border border-white/10">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg mb-4">
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Dress Code & Note</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-3">
+              <strong>Attire:</strong> Elegant Ethnic / Formal Indian attire is warmly encouraged to celebrate our cultural heritage.
+            </p>
+            <p class="text-xs text-slate-400 italic">
+              "A teacher affects eternity; they can never tell where their influence stops." — Henry Adams
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-neural-950 border-t border-white/10 py-10 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="flex items-center justify-center gap-2 mb-3">
+        <i class="fa-solid fa-brain text-gold-400 text-lg"></i>
+        <span class="font-display font-bold text-white tracking-wider">NEURONAUTS FORUM</span>
+      </div>
+      <p class="text-xs text-slate-400 max-w-md mx-auto mb-6">
+        Dedicated with reverence and endless gratitude to the faculty of our institution. Organized with pride by the students.
+      </p>
+      <div class="text-[11px] text-slate-400 border-t border-white/5 pt-4">
+        &copy; 2026 Neuronauts Forum. All Rights Reserved. • Happy Teacher's Day!
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    /* ==========================================================
+       1. NEURAL CONSTELLATION CANVAS ANIMATION
+       ========================================================== */
+    const canvas = document.getElementById('neural-canvas');
+    const ctx = canvas.getContext('2d');
+
+    let width, height;
+    let particles = [];
+    const particleCount = window.innerWidth < 768 ? 35 : 75;
+    const maxDistance = 140;
+
+    function resizeCanvas() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    }
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.vx = (Math.random() - 0.5) * 0.6;
+        this.vy = (Math.random() - 0.5) * 0.6;
+        this.radius = Math.random() * 2 + 1;
+        this.baseAlpha = Math.random() * 0.5 + 0.2;
+        this.color = Math.random() > 0.3 ? '147, 197, 253' : '245, 158, 11'; // soft blue / warm gold
+      }
+
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        if (this.x < 0 || this.x > width) this.vx *= -1;
+        if (this.y < 0 || this.y > height) this.vy *= -1;
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${this.color}, ${this.baseAlpha})`;
+        ctx.shadowBlur = 8;
+        ctx.shadowColor = `rgba(${this.color}, 0.8)`;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+      }
+    }
+
+    function initParticles() {
+      particles = [];
+      for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle());
+      }
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, width, height);
+
+      for (let i = 0; i < particles.length; i++) {
+        particles[i].update();
+        particles[i].draw();
+
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < maxDistance) {
+            const alpha = (1 - dist / maxDistance) * 0.22;
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = `rgba(99, 102, 241, ${alpha})`;
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+        }
+      }
+      requestAnimationFrame(animateParticles);
+    }
+
+    window.addEventListener('resize', () => {
+      resizeCanvas();
+      initParticles();
+    });
+
+    /* ==========================================================
+       2. COUNTDOWN TIMER TO SEPT 5, 2026
+       ========================================================== */
+    const eventDate = new Date('September 5, 2026 10:00:00').getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const difference = eventDate - now;
+
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+        document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('cd-minutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('cd-seconds').textContent = String(seconds).padStart(2, '0');
+      } else {
+        document.getElementById('cd-days').textContent = '00';
+        document.getElementById('cd-hours').textContent = '00';
+        document.getElementById('cd-minutes').textContent = '00';
+        document.getElementById('cd-seconds').textContent = '00';
+      }
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    /* ==========================================================
+       3. CONFETTI CELEBRATION
+       ========================================================== */
+    function triggerConfettiRain() {
+      if (typeof confetti === 'function') {
+        // Gold & Purple festive burst
+        confetti({
+          particleCount: 80,
+          spread: 70,
+          origin: { y: 0.6 },
+          colors: ['#F59E0B', '#FCD34D', '#6366F1', '#38BDF8', '#FFFFFF']
+        });
+      }
+      playGentleChime();
+    }
+
+    /* ==========================================================
+       4. WEB AUDIO SYNTH CELEBRATION CHIME
+       ========================================================== */
+    function playGentleChime() {
+      try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContext) return;
+        const ctx = new AudioContext();
+
+        const notes = [523.25, 659.25, 783.99, 1046.50]; // C5, E5, G5, C6 (Major celebratory chord)
+        notes.forEach((freq, index) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, ctx.currentTime + index * 0.1);
+
+          gain.gain.setValueAtTime(0, ctx.currentTime + index * 0.1);
+          gain.gain.linearRampToValueAtTime(0.15, ctx.currentTime + index * 0.1 + 0.05);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + index * 0.1 + 1.2);
+
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+
+          osc.start(ctx.currentTime + index * 0.1);
+          osc.stop(ctx.currentTime + index * 0.1 + 1.3);
+        });
+      } catch(e) {
+        console.log('Audio context playback not permitted yet.');
+      }
+    }
+
+    /* ==========================================================
+       5. RSVP FORM & DYNAMIC PASS GENERATION
+       ========================================================== */
+    function handleRsvpSubmit(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('faculty-name').value.trim();
+      const dept = document.getElementById('faculty-dept').value;
+      
+      if (!name) return;
+
+      // Update VIP Pass
+      document.getElementById('pass-name').textContent = name;
+      document.getElementById('pass-dept').textContent = dept;
+      document.getElementById('pass-code').textContent = '#GURU-' + Math.floor(1000 + Math.random() * 9000);
+      
+      const statusBox = document.getElementById('rsvp-status');
+      statusBox.classList.remove('hidden');
+
+      // Trigger grand celebratory confetti
+      triggerConfettiRain();
+
+      // Scroll pass into view smoothly
+      document.getElementById('vip-pass').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    /* ==========================================================
+       6. GRATITUDE BOARD DYNAMIC NOTES
+       ========================================================== */
+    function addGratitudeNote() {
+      const input = document.getElementById('note-input');
+      const text = input.value.trim();
+      if (!text) return;
+
+      const wall = document.getElementById('tribute-wall');
+      
+      const newCard = document.createElement('div');
+      newCard.className = "glass-card p-6 rounded-2xl border border-gold-400/50 relative animate-float";
+      newCard.innerHTML = `
+        <div class="text-gold-400 text-xl mb-3"><i class="fa-solid fa-heart"></i></div>
+        <p class="text-slate-200 text-sm font-light italic mb-4 leading-relaxed">"${text}"</p>
+        <div class="flex items-center gap-3 pt-3 border-t border-white/10">
+          <div class="w-8 h-8 rounded-full bg-gold-600 flex items-center justify-center font-bold text-xs text-neural-950">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div>
+            <p class="text-xs font-bold text-white">Grateful Student</p>
+            <p class="text-[10px] text-gold-400">Neuronauts Forum Member</p>
+          </div>
+        </div>
+      `;
+
+      wall.prepend(newCard);
+      input.value = '';
+      triggerConfettiRain();
+    }
+
+    /* ==========================================================
+       7. ADD EVENT TO CALENDAR (.ICS FILE DOWNLOAD)
+       ========================================================== */
+    function downloadCalendarEvent() {
+      const icsData = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//Neuronauts Forum//Teachers Day 2026//EN",
+        "BEGIN:VEVENT",
+        "SUMMARY:Teacher's Day Celebration 2026 (Neuronauts Forum)",
+        "DESCRIPTION:Annual Teacher's Day Felicitation & Celebration organized by the Neuronauts Student Forum.",
+        "LOCATION:Main Auditorium, Aryabhata Block, Campus Central",
+        "DTSTART:20260905T043000Z",
+        "DTEND:20260905T080000Z",
+        "STATUS:CONFIRMED",
+        "END:VEVENT",
+        "END:VCALENDAR"
+      ].join("\r\n");
+
+      const blob = new Blob([icsData], { type: 'text/calendar;charset=utf-8' });
+      const link = document.createElement('a');
+      link.href = window.URL.createObjectURL(blob);
+      link.setAttribute('download', 'Teachers_Day_Neuronauts_2026.ics');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    /* ==========================================================
+       INITIALIZE ON LOAD
+       ========================================================== */
+    window.onload = function() {
+      resizeCanvas();
+      initParticles();
+      animateParticles();
+    };
+  </script>
+</body>
+</html>
